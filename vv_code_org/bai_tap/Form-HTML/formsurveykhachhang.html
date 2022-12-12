@@ -3,35 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .table-border{
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
+
 <form action="">
     <h1> Market Research Survey</h1>
     <h2> please take a few moments to complete this satisfaction survey </h2>
-
+    <hr>
     <h3> What is your age range?</h3>
-    <select name="tien" id="">
-        <option value="18-24"> 18- 24 </option>
-        <option value="18-24"> 24- 35 </option>
-        <option value="18-24"> 40 - 75 </option>
-    </select>
+
+        <select name="tien">
+            <option value="18-24"> 18- 24</option>
+            <option value="18-24"> 24- 35</option>
+            <option value="18-24"> 40 - 75</option>
+        </select>
+
     <h4> what is your yearly income range? </h4>
     <select name="dolar" id="">
-        <option value="$0-$25,000">$0-$25,000 </option>
-        <option value="$1-$40,000">$1-$40,000 </option>
+        <option value="$0-$25,000">$0-$25,000</option>
+        <option value="$1-$40,000">$1-$40,000</option>
     </select>
-    Gender
-    <input type="radio" name="radio"> Male
+    <br>
+    <br>
+    Gender <br>
+    <input type="radio" name="radio"> Male <br>
     <input type="radio" name="radio"> Female
     <h5> Which of the following products have your purchased in the last 2 months. please check all that apply. </h5>
     <input type="checkbox" name="checkbox"> Product 1 <br>
     <input type="checkbox" name="checkbox"> Product 2 <br>
     <input type="checkbox" name="checkbox"> Product 3
     <h6> How often would you use our new product ? </h6>
-    <input type="radio" name=""radio > Daily <br>
-    <input type="radio" name=""radio > Weekly <br>
-    <input type="radio" name=""radio > Monthly <br>
-    <h7> What would you pay for the new product </h7>
+    <input type="radio" name="" radio> Daily <br>
+    <input type="radio" name="" radio> Weekly <br>
+    <input type="radio" name="" radio> Monthly <br>
+    <h7> What would you pay for the new product</h7> <br>
     $
     <table>
         <tr>
@@ -39,41 +49,40 @@
             <td><input type="text"></td>
         </tr>
         <tr>
-            <td> Dollars </td>
-            <td> cents </td>
+            <td> Dollars</td>
+            <td> cents</td>
         </tr>
     </table>
-    <h8> Please rate your level of agreement with the following </h8>statements
+    <h8> Please rate your level of agreement with the following</h8>
+    statements
 
-    <tabel border="1" width="50%">
+    <table class="table-border" border="1 solid">
         <tr>
-            <th> </th>
-            <th> strongly Disagree </th>
+            <th></th>
+            <th> strongly Disagree</th>
             <th> Disagree</th>
-            <th> Agree </th>
+            <th> Agree</th>
         </tr>
         <tr>
-            <td> Our products are priced fairly </td>
-            <td><input type="radio"> 1 </td>
-            <td><input type="radio"> 2 </td>
-            <td><input type="radio"> 3 </td>
+            <td> Our products are priced fairly</td>
+            <td><input type="radio"> 1</td>
+            <td><input type="radio"> 2</td>
+            <td><input type="radio"> 3</td>
         </tr>
         <tr>
-            <td> Our products are high quality </td>
-            <td> <input type="radio"> 1 </td>
-            <td><input type="radio"> 2 </td>
-            <td><input type="radio"> 3 </td>
+            <td> Our products are high quality</td>
+            <td style="display:flex "><input type="radio">1 <p>1</p></td>
+            <td><input type="radio"> 2</td>
+            <td><input type="radio"> 3</td>
         </tr>
         <tr>
             <td> You would recommend our product to a friend or coworker</td>
-            <td> <input type="radio"> 1 </td>
-            <td> <input type="radio"> 2 </td>
-            <td> <input type="radio"> 3 </td>
-
+            <td><input type="radio"> 1</td>
+            <td><input type="radio"> 2</td>
+            <td><input type="radio"> 3</td>
         </tr>
-    </tabel>
+    </table>
 </form>
-
 
 
 </body>
