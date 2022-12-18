@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<html>
+<body>
+Username: <input type="text" value="" id="username" /> <br/>
+Username: <input type="password" value="" id="password" /> <br/>
+<div id="message"></div>
+<input type="button" value="Login" onclick="validate()"/>
+
+</body>
+</html>
+<script language="javascript">
+    function validate()
+    {
+        // Lấy giá trị input
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // Lấy đối tượng message
+        var message = document.getElementById("message");
+
+        // Validate
+        if (username == "" || password == ""){
+            message.innerHTML = "Bạn chưa nhập đầy đủ thông tin!";
+            message.style.color = "red";
+        }
+
+        else{
+            message.innerHTML = "Chúc mừng ban, validate thành công!";
+            message.style.color = "blue";
+        }
+
+    }
+</script>
+
+
+
+
+</body>
+</html>

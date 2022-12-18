@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .h_t{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+<table class="h_t">
+   <tr>
+       <td> Amount </td>
+       <td> From Currency </td>
+       <td> To Currency </td>
+       <td> </td>
+   </tr>
+    <tr>
+        <td> <input type="text" id="dauvao"> </td>
+        <td>
+            <select id="select1">
+                <option value="vnd"> VietNam</option>
+                <option value="usd"> USD </option>
+            </select>
+        </td>
+        <td>
+            <select id="select2">
+                <option value="vnd"> VietNam</option>
+                <option value="usd"> USD</option>
+            </select>
+        </td>
+        <td>
+            <button type="button" onclick="transfer()"> Convert </button>
+        </td>
+    </tr>
+</table>
+    <p id="ve"> </p>
+    <script>
+        function transfer() {
+            let input = document.getElementById("dauvao").value;
+            let vi = document.getElementById("select1").value;
+            let minh = document.getElementById("select2").value;
+            let result;
+
+            if (vi == "vnd" && minh == "usd") {
+                result = input * 24000
+            } else {
+                result = input * 1000
+            }
+            document.getElementById("ve").innerText=result;
+        }
+    </script>
+</form>
+
+</body>
+</html>

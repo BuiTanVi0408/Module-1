@@ -1,0 +1,52 @@
+<html>
+<head>
+    <html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>getElementById example - daipho.com</title>
+    </head>
+<body>
+<p id="para">Some text here</p>
+<button onclick="changeColor('blue');">blue</button>
+<button onclick="changeColor('red');">red</button>
+</body>
+</html>
+
+<script>
+    function changeColor(newColor) {
+        var elem = document.getElementById('para');
+        elem.style.color = newColor;
+    }
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="myId">Chào mừng bạn đến với trang web</p>
+<h1>Đây là thẻ h1</h1>
+<h2>Đây là thẻ h2</h2>
+<p>Đây là thẻ p</p>
+<button onclick='document.getElementById("myId").innerHTML = "A1122I1";
+                document.getElementById("myId").style.color = "red";
+                   document.getElementById("myId").style.background = "yellow"'>Thay đổi nội dung</button>
+
+<form name="myForm">
+    <input type="button" value="comment" onclick="showcommentform()">
+    <div id="mylocation"></div>
+</form>
+<script type="text/javascript">
+    function showcommentform() {
+        var data = "Name:<input type='text' name='name'>"
+            + "<br>Comment:<br><textarea rows='5' cols='80'></textarea>"
+            + "<br><input type='submit' value='Post Comment'>";
+        document.getElementById('mylocation').innerHTML = data;
+    }
+</script>
+
+</body>
+</html>

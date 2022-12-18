@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<input type="text" name="number1" id="n5">
+<input type="text" name="number2" id="n2"><br>
+<input type="button" value="(Addition+)"  onclick="add()" >
+<input type="button" value="(subtraction-)"  onclick="sub()" >
+<input type="button" value="(Multiplication*)" onclick="mul()" >
+<input type="button" value="(Division/)"  onclick="div()" >
+<p id="Result"></p>
+<script>
+    function add() {
+        let input1=parseInt(document.getElementById("n5").value);
+        let input2=parseInt(document.getElementById("n2").value);
+        let result
+        result=input1+input2;
+        document.getElementById("Result").innerText=+result;
+    }
+    function sub() {
+        let input1=parseInt(document.getElementById("n5").value);
+        let input2=parseInt(document.getElementById("n2").value);
+        let result
+        result=input1-input2;
+        document.getElementById("Result").innerText=+result;
+    }
+    function mul() {
+        let input1=parseInt(document.getElementById("n5").value);
+        let input2=parseInt(document.getElementById("n2").value);
+        let result
+        result=input1*input2;
+        document.getElementById("Result").innerText=+result;
+    }
+    function div() {
+        let input1=parseInt(document.getElementById("n5").value);
+        let input2=parseInt(document.getElementById("n2").value);
+        let result
+        result=input1/input2;
+        document.getElementById("Result").innerText=+result;
+    }
+</script>
+
+<button onclick="commentform()">Comment</button>
+<div id="mylocation"> </div>
+
+<script>
+    var flag = true;
+    function commentform() {
+        var cform = "<form action='Comment'>"
+            + "Enter Name: <br><input type='text' name='name'/><br>"
+            + "Enter Email: <br><input type='email' name='email'/><br>"
+            + "Enter Comment: <br><textarea rows='5' cols='70'></textarea><br>"
+            + "<input type='submit' value='Post Comment'/>"
+            + "</form>";
+        if (flag) {
+            document.getElementById("mylocation").innerHTML = cform;
+            flag = false;
+        } else {
+            document.getElementById("mylocation").innerHTML = "";
+            flag = true;
+        }
+    }
+
+
+</script>
+</body>
+</html>
