@@ -1,0 +1,56 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<form >-->
+<!--    <form>-->
+<!--        <img id="myImage" src="https://thuviendohoa.vn/upload/images/items/hinh-anh-qua-bong-vang-png-454.webp" />-->
+<!--        <p>Click button below to move the image to right</p>-->
+<!--        <input type="button" value="Click Me" onclick="moveRight()" />-->
+<!--    </form>-->
+<!--    <script>-->
+<!--        let img = document.getElementById('myImage');-->
+<!--        function init(){-->
+<!--            img = document.getElementById('myImage');-->
+<!--            img.style.position = 'relative';-->
+<!--            img.style.left = '0px';-->
+<!--            img.style.top = '0px';-->
+<!--        }-->
+<!--        function moveRight() {-->
+<!--            img.style.left = parseInt(img.style.left) + 10 + 'px';-->
+<!--            img.style.top = parseInt(img.style.left) + 10 + 'px';-->
+<!--        }-->
+<!--        window.onload=init;-->
+<!--    </script>-->
+
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Thuộc tính position trong CSS</title>
+</head>
+<style type="text/css" media="screen">
+    div {
+        padding: 40px;
+        margin: 20px;
+        width: 320px;
+        border: 2px solid red;
+    }
+    .relative {position: absolute;
+    left: 5px;
+    top: 5px;
+        background-color: #e1ab22;
+    }
+</style>
+<body>
+<div>TopDev tuyen dung IT hang dau.</div>
+<div class="relative">TopDev tuyen dung IT hang .</div>
+<div>TopDev tuyen dung IT hang dau.</div>
+</body>
+</html>

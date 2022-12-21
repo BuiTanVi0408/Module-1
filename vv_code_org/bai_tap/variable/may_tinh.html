@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <h1> Caculator </h1>
+ <input type="text" id="minh1">
+ <input type="text" id="minh2"> <br>
+ <input type="buton" value="Addition(+)" onclick="Add()">
+ <input type="buton" value="Subtraction(-)" onclick="apart()">
+ <input type="buton" value="Multiplication(X)" onclick="core()">
+ <input type="buton" value="Division(/)" onclick="share()">
+ <p id= " b " ></p>
+</body>
+
+<script>
+    function Add(){
+        let d = parseInt(document.getElementById("minh1").value);
+        let e = parseInt(document.getElementById("minh2").value);
+        let result;
+        result = d + e;
+        document.getElementById(" b ").innerText = result;
+    }
+    function apart(){
+        let d = parseInt(document.getElementById("minh1").value);
+        let e = parseInt(document.getElementById("minh2").value);
+        let result;
+        result = d - e;
+        document.getElementById(" b ").innerText = result;
+    }
+    function core() {
+        let d = parseInt(document.getElementById("minh1").value);
+        let e = parseInt(document.getElementById("minh2").value);
+        let result;
+        result = d * e;
+        document.getElementById(" b ").innerText = result;
+    }
+    function share() {
+        let d = parseInt(document.getElementById("minh1").value);
+        let e = parseInt(document.getElementById("minh2").value);
+        let result;
+        result = d / e;
+        document.getElementById(" b ").innerText = result;
+    }
+
+</script>
+<!--<button onclick="commentform()">Comment</button>-->
+<!--<div id="mylocation"> </div>-->
+
+<!--<script>-->
+<!--    var flag = true;-->
+<!--    function commentform() {-->
+<!--        var cform = "<form action='Comment'>"-->
+<!--            + "Enter Name: <br><input type='text' name='name'/><br>"-->
+<!--            + "Enter Email: <br><input type='email' name='email'/><br>"-->
+<!--            + "Enter Comment: <br><textarea rows='5' cols='70'></textarea><br>"-->
+<!--            + "<input type='submit' value='Post Comment'/>"-->
+<!--            + "</form>";-->
+<!--        if (flag) {-->
+<!--            document.getElementById("mylocation").innerHTML = cform;-->
+<!--            flag = false;-->
+<!--        } else {-->
+<!--            document.getElementById("mylocation").innerHTML = "";-->
+<!--            flag = true;-->
+<!--        }-->
+<!--    }-->
+
+
+<!--</script>-->
+</html>

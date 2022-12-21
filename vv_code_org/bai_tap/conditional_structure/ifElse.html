@@ -1,0 +1,86 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<script>-->
+<!--    // let d = parseInt(prompt("hay nhap dung so tuoi cua ban"))-->
+<!--    // if( d>=18 ){-->
+<!--    //     alert("ban da du tuoi vi thanh nien"); cấu trúc if-else-->
+<!--    // }else{-->
+<!--    //     alert("ban chua du tuoi vi thanh nien ");-->
+<!--    // }-->
+
+<!--//     let a = prompt(" nhập tên vào đây " ,'');-->
+<!--//     if(a=='vi'){-->
+<!--//         alert("nhập tên tiếp theo " )-->
+<!--//     }else if (a== null){-->
+<!--//         alert('chua nhap ten kia ban oi'); cấu trúc if-else 22-->
+<!--//    }else{-->
+<!--//         alert("qua o tiep theo di ban");-->
+<!--//     }-->
+<!--// let  b = prompt("ten thu 2 ơ day nha cac ban" ,'');-->
+<!--//     if(b=='minh'){-->
+<!--//         alert("nghi o day duoc roi")-->
+<!--//     }else{-->
+<!--//         alert("nhap lai di nhap dung ten minh vao day")-->
+<!--//     }-->
+<!--//     if (browser == 'Edge') {-->
+<!--//         alert("You've got the Edge!");-->
+<!--//     } else if (browser == 'Chrome' || browser == 'Firefox' || browser == 'Safari' || browser == 'Opera') {-->
+<!--//         alert('Okay we support these browsers too');-->
+<!--//     } else {-->
+<!--//         alert('We hope that this page looks ok!');-->
+<!--//     }-->
+<!--//     let browser = prompt("nhap vao day nao", '')-->
+<!--//     switch (browser) {-->
+<!--//         case 'Edge':-->
+<!--//         alert("you've got the Edge! "); switch - case-->
+<!--//         break-->
+<!--//         case 'chrome':-->
+<!--//         case 'Firefox':-->
+<!--//         case 'Safari':-->
+<!--//         case 'Opera':-->
+<!--//          alert("okay we support these browsers too");-->
+<!--//          default:-->
+<!--//              alert("we hope that this page looks ok!")-->
+<!--//     }-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chisocannangcothe</title>
+</head>
+<body>
+<h1> Tinh chi so can bang co the</h1>
+<input type="number" id="weight" placeholder="nhap can nang">
+<input type="number" id="height" placeholder="nhap chieu cao">
+<button  onclick="tinhchiso()">tinh chi so</button>
+<p id="ketqua"></p>
+<script>
+    function tinhchiso() {
+        let a=document.getElementById("weight").value;
+        let b=document.getElementById("height").value;
+        b=b/100;
+        let c=a/(b*b);
+        if(c<18){
+            document.getElementById("ketqua").innerText="underweight"
+        }
+        else if(c<25){
+            document.getElementById("ketqua").innerText="normal"
+        }
+        else if(c<30){
+            document.getElementById("ketqua").innerText="overweight"
+        }
+        else{
+            document.getElementById("ketqua").innerText="obese"
+        }
+    }
+</script>
+</body>
+</html>
