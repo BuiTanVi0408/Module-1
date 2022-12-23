@@ -5,18 +5,37 @@
     <title>Title</title>
 </head>
 <body>
+<form>
+    <table>
+        <tr>
+            <td> Cân Nặng </td>
+            <td><input type="text" id="vi"></td>
+            <td> Chiều Cao </td>
+            <td><input type="text" id="minh"></td>
+            <td> <buton onclick="calculate()"> calculate </buton></td>
+        </tr>
+        <tr>
+            <p id="t"></p>
+        </tr>
+    </table>
+</form>
 <script>
-    let hi = parseInt(prompt("nhap so can nang"));
-    let ho = parseInt(prompt("nhap chieu cao"));
-    let bmi = hi / ( ho^2 );
-    if (bmi < 18)
-        document.write("Underweight");
-    else if (bmi < 25.0)
-        document.write("Normal");
-    else if (bmi < 30.0)
-        document.write("Overweight");
-    else
-        document.write("Obese");
+    function calculate() {
+        let weight = document.getElementById("vi").value;
+        let height = document.getElementById("minh").value;
+        let bmi = weight / (height * height);
+
+        if(bmi<18.5){
+            document.getElementById("t").innerText = "Underweght"
+        }else if(bmi < 25.0){
+            document.getElementById("t").innerText = "Normal"
+        }else if(bmi < 30.0){
+            document.getElementById("t").innerText = "Overweght"
+        }else{
+            document.getElementById("t").innerText= "Obese"
+        }
+    }
+    
 </script>
 </body>
 </html>

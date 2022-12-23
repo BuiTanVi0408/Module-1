@@ -5,25 +5,43 @@
     <title>xephanghocluc</title>
 </head>
 <body>
+<form>
+    <table>
+        <tr>
+            <td> A</td>
+            <td><input type="text" id="vi1"></td>
+            <td> B </td>
+            <td><input type="text" id="vi2"></td>
+            <td> C </td>
+            <td><input type="text" id="vi3"></td>
+            <td> <buton onclick="tong()">tong</buton></td>
+        </tr>
+        <tr>
+            <td> <p id="minh"> KQ</p></td>
+        </tr>
+    </table>
+</form>
+</body>
 <script>
-    let a;
-    let b;
-    let c;
-    let tb;
-    a= +prompt("nhap diem kiem tra:")
-    b= +prompt("nhap diem giua ky:")
-    c= +prompt("nhap diem cuoi ky:")
-    diemtrungbinh=(a+b+c)/3
-    if(diemtrungbinh >=8){
-        document.write("gioi")}
-    else if(diemtrungbinh >=6.5 ){
-        document.write("kha")}
-    else if(diemtrungbinh >=5){
-        document.write(" trung binh")}
-    else {
-        document.write("kem")
+    function tong(){
+        let a = document.getElementById("vi1").value;
+        a = parseInt(a)
+        let b = document.getElementById("vi2").value;
+        b = parseInt(b)
+        let c = document.getElementById("vi3").value;
+        c = parseInt(c)
+        let d = ( a + b + c) / 3
+
+        if(d<4){
+            document.getElementById("minh").innerText=    "kem"
+        }else if(d <=6){
+            document.getElementById("minh").innerText=     "trungbinh"
+        }else if(d<=8){
+            document.getElementById("minh").innerText=     "kha"
+        }else {
+            document.getElementById("minh").innerText=  "gioi"
+        }
     }
 
 </script>
-</body>
 </html>
