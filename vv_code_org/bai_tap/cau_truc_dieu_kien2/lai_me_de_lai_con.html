@@ -6,21 +6,34 @@
 </head>
 <body>
 <input type="number" id="a" placeholder="nhap so tien ban dau">
-<input type="number" id="b" placeholder="nhap so thang cho vay">
+<input type="number" id="b" placeholder="nhap so thang cho vay" max="3">
 <input type="number" id="c" placeholder="nhap lai suat hang thang">
-<button onclick="caculate()">tinh tien lai </button>
+<button onclick="caculate()">tinh tien lai</button>
 <p id="lainganhang"></p>
 
 
-
 <script>
-    function caculate(){
-        let a=+document.getElementById("a").value
-        let b=+document.getElementById("b").value
-        let c=+document.getElementById("c").value
+    function caculate() {
+
+        let a = +document.getElementById("a").value
+        let b = +document.getElementById("b").value
+        let c = +document.getElementById("c").value
+
         let d
-        d=a*Math.pow(1+c,b)
-        document.getElementById("lainganhang").innerText=('tong so tien lai la:'+d)}
+        switch (b) {
+            case 0:
+               document.getElementById("lainganhang").innerText = a;
+               break;
+               case 1:
+                   document.getElementById("lainganhang").innerText = a + a  * c
+                break;
+                   case 2:
+                       let x = a + a  * c;//1 thang
+                       document.getElementById("lainganhang").innerText = x + x  * c
+
+        }
+    }
+
 
 </script>
 </body>

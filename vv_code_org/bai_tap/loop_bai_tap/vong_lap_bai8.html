@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gamedoanso</title>
+</head>
+<body>
+<button onclick="play()">play</button>
+<script>
+    function play(){
+
+        let n = prompt("nhap so ban doan");
+        let ranDom =Math.round(10*Math.random()) ;
+
+        if (n == ranDom) {
+            alert("you win");
+        } else {
+            alert("you lost");
+        }
+
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let num = +prompt(" nhap so vao day")
+    // let total = 0;
+    // while (num>=0){
+    //     num = +prompt("nhap num")
+    //     if(num%7==0){
+    //         alert(num)
+    //     }
+    //     total = total + num;
+    // }
+    // alert(total);
+    let sum =0;
+    let i=1;
+    let j=0;
+    while(i<=30){
+        j++;
+        if(j%7==0){
+            document.writeln(j);
+            i++;
+            sum+=j;
+        }
+    }
+    document.write(" <br>Tổng 30 số đầu tiên chia hết cho 7 là: "+sum);
+
+</script>
+</body>
+</html>

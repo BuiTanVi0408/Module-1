@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // ham map thay doi gia tri các
+    // thuộc tính đối tượng trong mảng
+    // hàm map sẽ trả về một mảng mới với các gtri đã được chỉnh sủa
+     // đầu tiên khỏi tạo mảng animal có chứa 2 đối tượng là cat va dog
+    // định nghĩa đối tượng có các thuộc tính là id name va size
+    let animals =[
+        {
+            "id" : 1,
+            "name": "cat",
+            "size": "small"
+        },
+        {
+            "id" : 2,
+            "name": "dog",
+            "size": "small"
+        }
+    ]
+    let newAnimals = animals.map(function (animal) {
+        if(animal.id==1){
+            animal.name = "python"
+        }
+         return animal;
+    })
+    console.log(newAnimals);
+
+
+     // sử dụng hàm map để lặp, kiểm tra nếu đối tượng có id = 1 thì thay
+    // đổi tên thành python
+    // console ra mảng mới
+
+
+</script>
+
+
+
+
+</body>
+</html>

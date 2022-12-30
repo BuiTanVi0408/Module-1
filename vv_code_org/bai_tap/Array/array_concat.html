@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // de noi hai mang du lieu
+     let a = ["bui", "tan"];
+      let b = ["vi"];
+      let c = a.concat(b);
+    // khai bao bien c de lu gia tri sau khi noi mang a va b
+    console.log(c);
+    // tiep theo su dung concat de noi hai mang co chua co chua phan tu la doi tuong
+    // dau tien khai bao bien array chua  2 doi tuong co id va name
+    let array = [
+        {
+            id:1,
+            name: "bui tan vi"
+        },
+        {
+            id:2,
+            name: "bui tan minh"
+        }
+    ]
+    let array2 =[
+        {
+            id:3,
+            name:"nguyen van a"
+        },
+        {
+            id:4,
+            name: "nguyen van b"
+        }
+    ]
+    // khai bao mang newArray de luu gtri sau khi noi mang
+    let newArray = array2.concat(array);
+    console.log(newArray);
+
+</script>
+
+</body>
+</html>

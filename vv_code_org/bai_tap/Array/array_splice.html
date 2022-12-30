@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // splice de xoa 1 hoac nhieu phan tu trong mang
+    // dau tien su dung ham splice de xoa 1 phan tu kieu chuoi trong mang
+    let array = [" code ", "gym" , "vn"];
+    console.log(array);
+    // tham so truyen vao splice la vi tri bat dau xoa va so luong phan tu muon xoa
+    array.splice(1,1);
+    console.log(array);
+
+    // tiep theo dung splice de xoa 1 hoac nhieu doi tuong trong mang
+    // mang students chua hai doi tuong
+    let students = [
+        {
+            id:1,
+            name: "bui tan vi",
+            address: "quang ngai"
+        },
+        {
+            id:2,
+            name:"bui tan minh",
+            address: "quang nam"
+        }
+        ]
+    console.log(students)
+    // su dung console.log de hien thi noi dung student
+    // su dung for de duyet mang
+    for(let i=0;i<students.length; i++){
+        if(students[i].id == 2){
+            students.splice(i,1)  }
+        // dung dung cau lenh if
+        // de kiem tra neu nhu id cua doi tuong = voi 2
+        // thi su dung ham splice de xoa di doi tuong co id = 2
+        // truyen vao ham splice vi tri cua doi tuong co id = 2 ,
+        // va so luong muon xoa
+    }
+    console.log(students);
+
+
+
+</script>
+
+
+</body>
+</html>
