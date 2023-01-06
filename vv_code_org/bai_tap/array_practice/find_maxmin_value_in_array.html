@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // khai bao mang va khoi tao gtri ban dau cho mang
+    let numbers = [-3, 5 , 7 , 12, 11]
+    // khai bao bien max de luu gtri lon nhat mac dinh
+    // la phan tu dau tien trong mang
+    let max = numbers[0]
+    // khai bao bien index mac dinh gan gia tri 0 de luu chi so
+    // phan tu lon nhat trong mang
+    let index = 0;
+    // dung vong lap duyet toan bo mang x tu phan tu tiep theo den
+    // het mang kiem tra neu 1 phan tu trong mang x co gtri lon
+    // hon max thi gan max chinh la phan tu do
+    // va gan vi tri cua phan tu do
+    for(i=1;i<numbers.length;i++){
+        if(numbers[i]>max){
+            max=numbers[i];
+            index = i;
+        }
+    }
+    alert("max" + " " + max + " at position" + " " + index);
+    // position vitri
+</script>
+
+</body>
+</html>

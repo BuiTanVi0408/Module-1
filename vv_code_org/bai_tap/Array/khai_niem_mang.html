@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  mảng là một loại biến đặc biệt có thể lưu nhiều giá trị thay vì 1 giá trị như các biến thông thường
+  mỗi giá trị là một phần tử , các phần tử được lưu ,
+  phần tử là các giá trị được lưu trong mảng
+  chỉ số là vị trí các phần tử trong mảng , chỉ số đầu tiên là bắt đầu bằng  , chỉ số cuối cùng là n-1
+  ví dụ mảng có 12 phần tử , chỉ số đầu tiên là 0 chỉ số cuối cùng là 12 -1 , chỉ số cuối cùng là 11
+  độ dài của mảng là số lượng các phần tử trong mảng
+  cú pháp để khai báo mảng
+   let array = ["vi","minh"]
+   let vi = new Array ("vi", "minh")
+   phần tử ( item )
+   chỉ số là (index)
+   truy xuất các phần tử thông qua chỉ số đặt trong dấu []
+   để lấy 1 phần tử trong mảng là dùng cú pháp
+   arr[index]  trong đó arr là tên biến mảng , index là chỉ số vị trí trong mảng
+   push()
+   - là thêm phần tử vào cuối mảng
+   pop()
+   - để xóa phần tử cuối mảng
+   shift()
+   - để xóa phần tử vào đầu mảng
+   unshift()
+   -là thêm phần tử vào đầu mảng
+   splice(1, 2)
+   - là để xóa một phần tử cụ thể ra khỏi một mảng
+   tham số đầu tiên là index phần tử cần loại bỏ , tham số thứ 2 là số phần tử muốn loại bỏ
+   pop()
+   -  để xóa phần tử cuối mảng là dùng
+   các hàm xử lý mảng :
+   length :
+   - trả về số lượng phần tử trong mảng
+   hàm concac()
+   - có tác dụng ghép 2 mảng lại với nhau
+   ham arr.slice(begin,end)
+   - có tác dụng lấy ra 1 hoặc một số phần tử
+   trong đó begin và vị trị bắt đầu end là vị trí kết thúc
+   arr là tên biến mảng muốn thêm vào
+   Hàm join()
+  -Hàm này có tác dụng gộp tất cả các phần tử có trong mảng thành một chuỗi.
+   arr.join(string);
+   arr là tên biến mảng mà chúng ta cần gộp.
+   string là chuỗi phân cách giữa các phần tử sau khi gộp (để trống là ngăn cách bằng dấu ,).
+   Hàm sort()
+  -Hàm này có tác dụng sắp xếp lại mảng theo chiều tăng dần,
+   nếu là số thì từ bé đến lớn, chữ thì sắp xếp theo alpha(a-z).
+   Hàm reverse()
+  -Hàm này có tác dụng đảo ngược vị trí các phần tử của mảng.
+  <script>
+      let arr = ["minh", "vi", "hung"]
+      //let begin = [" thu "," chin "]
+
+      console.log(arr.join())
+
+  </script>
+
+</body>
+</html>

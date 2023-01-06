@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let i = 1;
+    // for(;i<=10;){
+    //     i++;
+    //     console.log(i);
+    // }
+    // var arr =[
+    //     " javascript",
+    //     " php",
+    //     "java",
+    //     "dart"
+    // ];
+    // for(i=0;i<arr.length;i++){
+    //     console.log(arr[i]);
+    // }
+    let mang1Chieu = [10, 20, 30]; //Mảng 1 chiều
+    let mang2Chieu = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ]; //x là mảng 1 chiều
+    // document.write(mang2Chieu[hàng][cột])
+     //document.write(mang2Chieu[2][1])
+    for (let i = 0; i < mang2Chieu.length; i++) { // DUyệt qua các hàng
+       for (let j = 0; j < mang2Chieu[i].length; j++) {
+           if(i==2 && j==2){
+               document.write(8)
+               break;
+           }
+           document.write(mang2Chieu[i][j] + " ")
+
+       }
+       document.write('<br/>')
+    }
+
+</script>
+</body>
+</html>

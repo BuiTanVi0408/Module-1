@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = [-3,-5,2,6,9,8,10];
+    let first = 0;
+    // bien nay de duyet phan tu dau mang
+    let last = x.length-1;
+
+    // bien nay de duyet phan tu cuoi mang
+    while (first<last){
+        let b = x[first];
+        x[first] = x[last];
+        x[last] = b;
+        first++;
+        last--;
+    }
+    document.write(x)
+    // Dùng vòng lặp chạy với điều kiện first < last, trong quá trình lặp đổi chỗ phần tử đầu tiên và cuối cùng cho
+    // nhau. Sau đó tăng biến first lên 1 để duyệt phần tử tiếp theo, giảm last đi một.
+</script>
+
+</body>
+</html>

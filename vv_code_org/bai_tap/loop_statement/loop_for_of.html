@@ -14,6 +14,28 @@
         console.log(w);
     }
 
+
+    // vi du lay ra tung phan tu trong mang
+    var language =[
+        " js",
+        " node",
+        "java"
+    ];
+    for( var key of language){
+        console.log(key)
+    }
+    // vi du la ra ki ma no la object
+    // cach 1
+    let ten = {
+        name: "bui tan vi",
+        age: 20
+    }
+    for( let kill of object.keys(ten)){ // dang o doi tuong object.keys(ten) co nhiem vu chuyen doi tuong ve dang mang
+        console.log(kill); // lay ra cac key la name , age
+        // console.log(ten[kill]); lay ra gia tri cua kill
+    }
+
+
 </script>
 
 </body>

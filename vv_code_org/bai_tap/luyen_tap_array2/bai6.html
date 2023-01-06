@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = prompt("nhap vao mot so n")
+    //let a = [ 3, 4, 5, "-" , 7,8,9, "-"]
+    let a = []
+    for(i=0;i<n;i++){
+        a[i]= prompt(" nhap mang ky tu" + (i+1))
+    }
+    for(i=0;i<a.length;i++){
+        if(a[i]== "-"){
+            a[i] = "_";
+        }
+    }
+    document.write(a);
+
+</script>
+
+</body>
+</html>
