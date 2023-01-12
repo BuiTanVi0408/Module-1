@@ -6,24 +6,35 @@
 </head>
 <body>
 <script>
-    let a = [3,4,5,6];
-    let b = [3,4,5,4];
-    let check = true;
-    if (a.length === b.length){
-        for (let i =0; i < a.length ; i++){
-            if (a[i] !== b[i]){
-                check = false;
-            }
-        }
-    }else {
-        check = false;
-    }
-    if (check){
-        document.write("2 chuoi giong nhau")
-    }else {
-        document.write("2 chuoi khac nhau")
+    // let a = [3,4,5,6];
+    // let b = [3,4,5,4];
+    // let check = true;
+    // if (a.length === b.length){
+    //     for (let i =0; i < a.length ; i++){
+    //         if (a[i] !== b[i]){
+    //             check = false;
+    //         }
+    //     }
+    // }else {
+    //     check = false;
+    // }
+    // if (check){
+    //     document.write("2 chuoi giong nhau")
+    // }else {
+    //     document.write("2 chuoi khac nhau")
+    // }
+    let a = prompt("Nhập vào chuỗi thứ nhất");
+    let b = prompt("Nhập vào chuỗi thứ hai");
+
+    if(a.includes(b) === true && b.includes(a) === true){
+        document.write("Hai chuỗi giống nhau!");
+    }else{
+        document.write("Hai chuỗi khác nhau!");
     }
 </script>
+
+
+
 
 </body>
 </html>

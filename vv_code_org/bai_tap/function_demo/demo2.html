@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script !src="">
+    let total2; // Biến toàn cục
+    total2 = 100;
+    function sum(a, b) { // tham số
+        let total = a + b; // biến cụ bộ => chỉ sử dụng ở trong phạm vi hàm
+        total2 = a + b;
+        document.write("Tổng: " + total)
+    }
+
+    sum(1, 2);
+    document.write("<br/>Tổng của toàn cục: " + total2)
+</script>
+</body>
+</html>

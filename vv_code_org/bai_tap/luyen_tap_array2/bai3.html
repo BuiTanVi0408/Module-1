@@ -6,12 +6,15 @@
 </head>
 <body>
 <script>
-    let a = ['bqwqwqw','u','i','t']
+    let a = ['b','u','i','t','4','6','9']
     let sum = 0;
     for(i=0;i < a.length;i++){
-        sum = sum + a[i].length;
+        if (isNaN(a[i]) === false){
+           sum++
+        }
     }
-    document.write(sum)
+    document.write("số kí tự trong mảng là " + sum)
+
 </script>
 
 </body>

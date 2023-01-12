@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script !src="">
+    //Tính tổng các số giai thừa ở trong mảng
+    let arr = [1, 2, 3, 4, 5];
+
+    function factorial(n) {
+        let total = 1;
+        for (let i = 2; i <= n; i++) {
+            total = total * i;
+        }
+
+        return total;
+    }
+
+    let total = 0;
+    for(let item of arr) {
+        total += factorial(item);
+    }
+    document.write("total: " + total)
+
+</script>
+</body>
+</html>

@@ -8,13 +8,14 @@
 <script>
     let n = prompt("nhap vao mot so n")
     //let a = [ 3, 4, 5, "-" , 7,8,9, "-"]
+    let i
     let a = []
     for(i=0;i<n;i++){
         a[i]= prompt(" nhap mang ky tu" + (i+1))
     }
     for(i=0;i<a.length;i++){
         if(a[i]== "-"){
-            a[i] = "_";
+            a[i] = "_";i
         }
     }
     document.write(a);
