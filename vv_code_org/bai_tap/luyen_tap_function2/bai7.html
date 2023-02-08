@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hamdoicho2so</title>
+</head>
+<body>
+<script>
+    function doiChoSoNguyen(a,b){
+        let c = a;
+        a = b;
+        b = c;
+        document.write("so nguyen thu nhat sau doi cho la: " + a+'<br>');
+        document.write("so nguyen thu hai sau doi cho la: " + b);
+    }
+
+    let a = +prompt("nhap vao so nguyen dau tien");
+    let b = +prompt("nhap vao so nguyen thu hai ");
+    doiChoSoNguyen(a,b);
+</script>
+</body>
+</html>

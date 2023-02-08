@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinhdientichchuvihinhtron</title>
+</head>
+<body>
+<script>
+    let soPi = 3.14;
+    function chuVi(r){
+        let chuVi = 2*r*soPi ;
+        return chuVi ;
+    }
+    function dienTich(r){
+        let dienTich = r*r*soPi ;
+        return dienTich ;
+    }
+    let r = +prompt("Nhap chieu dai ban kinh hinh tron: ");
+    let a = chuVi(r);
+    let b = dienTich(r);
+    document.write("chu vi hinh tron la  "+a+"</br>");
+    document.write("dien tich hinh tron la "+b);
+</script>
+</body>
+</html>

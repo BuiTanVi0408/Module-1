@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // tạo được đối tượng
+    // truy cập các thành phần của lớp
+    // tạp lớp đối tượng và hiển thị thông tin của đối tượng
+    // định nghĩa lớp student với các thuộc tính
+    // phương thức getinfor trả về thông tin đối tượng
+    function Student(id,name,address) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.getInfor = function () {
+            return "Id" + this.id + "Name" + this.name + "Address" + this.address;
+        }
+    }
+    var student = new Student(1, "Bui Tan Vi", "Quang ngai");
+    console.log(student.getInfor());
+    // sử dụng var studen = new student để khởi tạo đối tượng
+   // truyền vào giá trị id , tên , địa chỉ
+    // thực thi phương thức getInfor, thông qua đối tượng student
+
+    // su dung ocject li to ro de khoi tao doi tuong
+    let student = {
+        id: 2,
+        name: " Bui Tan Minh",
+        address: " Sai gon",
+        getInfor: function () {
+            return "Id" + this.id + "Name" + this.name + "Address" + this.address;
+        }
+    }
+    // goi thuoc tinh va phuong thuc thong qua student
+    console.log(student.name);
+    console.log(student.getInfor());
+</script>
+
+</body>
+</html>

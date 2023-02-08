@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>songuyennhonhattrong3so</title>
+</head>
+<body>
+<script>
+    function min3So(a, b, c){
+        let min = a;
+        if (min > b)
+            min= b;
+        if(min > c)
+            min = c;
+        return min ;
+    }
+    let a = +prompt('nhap so nguyen thu 1');
+    let b = +prompt('nhap so nguyen thu 2');
+    let c = +prompt('nhap so nguyen thu 3');
+    let min = min3So(a, b, c);
+    document.write("so nho nhat trong 3 so la" +min);
+</script>
+</body>
+</html>

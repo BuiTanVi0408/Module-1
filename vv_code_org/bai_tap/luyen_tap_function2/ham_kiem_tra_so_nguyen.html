@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>functionPrimerNumber</title>
+</head>
+<body>
+<script>
+    function primerNumber() {
+        let n=+prompt('nhap so nguen n de kiem tra co phai la so nguyen to hay khong')
+        let count = 0
+        for (let i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                count++;
+            }
+        }
+        if (count == 2) {
+            return ' la so nguyen to';
+        }
+        else {
+            return 'khong la so nguyen to';
+        }
+    }
+    let x= primerNumber();
+    document.write(x);
+
+
+
+
+
+</script>
+</body>
+</html>

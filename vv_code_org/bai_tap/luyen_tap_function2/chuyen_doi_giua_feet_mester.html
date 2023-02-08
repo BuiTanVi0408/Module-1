@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Converter</title>
+</head>
+<body>
+
+<form>
+    <p>
+        <input id="inputFoot" type="number" placeholder="Feet"
+               oninput="footToMeter(this.value)"
+               onchange="footToMeter(this.value)">
+        <label>Feet to Meters</label>
+        <span id="outputMeter"></span>
+    </p>
+    <p>
+        <input id="inputMeter" type="number" placeholder="Meters"
+               oninput="meterToFoot(this.value)"
+               onchange="meterToFoot(this.value)">
+        <label>Meters to Feet</label>
+        <span id="outputFoot"></span>
+    </p>
+</form>
+
+<script>
+
+    function footToMeter(foot) {
+        foot = parseFloat(foot);
+        document.getElementById("outputMeter").innerHTML = 0.305 * foot;
+    }
+    function meterToFoot(meter) {
+        meter = parseFloat(meter);
+        document.getElementById("outputFoot").innerHTML = 3.279 * meter;
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hamkiemtrakytuthuocmang</title>
+</head>
+<body>
+<script>
+    function array(n){
+        let arr =[];
+        for (let i = 0; i < n; i++) {
+            arr[i] = prompt("nhap vao phan tu thu " + (i+1));
+        }
+        return arr ;
+    }
+    function kiemTraKyTu(arr, a){
+        if((arr.indexOf(a)) !== -1){
+            let count = 0;
+            for(let i = 0; i < arr.length; i++){
+                if(arr[i] == a){
+                    count++;
+                }
+            }
+            return count;
+        }else{
+            return -1;
+        }
+    }
+    let n = +prompt("nhap vao so phan tu cua mang ");
+    let x = array(n);
+    let y = prompt("nhap vao ky tu muon kiem tra ");
+    let z = kiemTraKyTu(x, y);
+    document.write(z);
+</script>
+</body>
+</html>

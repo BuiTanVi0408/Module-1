@@ -11,16 +11,24 @@
     // 3! = 1 * 2 * 3
     // n! = 1 * 2 * 3 * ... * (n - 1) * n;
 
-    function factorial(n) {
+    // function factorial(n) {
+    //     let total = 1;
+    //     for (let i = 2; i <= n; i++) {
+    //         total = total * i;
+    //     }
+    //     document.write(total)
+    // }
+    // factorial(5); //3! = 1 * 2 * 3 = 6
+
+    function tong(n){
         let total = 1;
-        for (let i = 2; i <= n; i++) {
+        for (let i =2; i<=n; i++){
             total = total * i;
         }
-
         document.write(total)
     }
+    tong(7);
 
-    factorial(5); //3! = 1 * 2 * 3 = 6
 
 </script>
 </body>

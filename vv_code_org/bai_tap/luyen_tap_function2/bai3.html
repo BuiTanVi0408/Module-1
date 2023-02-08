@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hamtinhgiaithua</title>
+</head>
+<body>
+<script>
+    function giaiThua(a){
+        let x = 1;
+        for(let i=2;i <= a;i++ ){
+            x= x*i;
+        }
+        return x ;
+    }
+    let a = +prompt("Nhap vao so ban mong muon ");
+    let b = giaiThua(a);
+    document.write(a+"! = "+b);
+</script>
+</body>
+</html>

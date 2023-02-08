@@ -9,17 +9,27 @@
     //Tính giai thừa: n! + m!
 
 
-    function factorial(n) {
+    // function factorial(n) {
+    //     let total = 1;
+    //     for (let i = 2; i <= n; i++) {
+    //         total = total * i;
+    //     }
+    //
+    //     return total;
+    // }
+    //
+    // let total = factorial(3) + factorial(4);
+    // document.write("total: " + total)
+    function cong_hai_so(n) {
         let total = 1;
-        for (let i = 2; i <= n; i++) {
+        for (let i =2; i<=n;i++){
             total = total * i;
         }
-
         return total;
     }
+    let vi = cong_hai_so(4) + cong_hai_so(6)
+    document.write(vi);
 
-    let total = factorial(3) + factorial(4);
-    document.write("total: " + total)
 
 </script>
 </body>
